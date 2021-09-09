@@ -22,3 +22,12 @@
     color:#6c757d;
 
 }
+
+.nav-item:visited, .nav-item:active, .nav-item:focus {
+    text-decoration: none !important;
+    color: #6c757d;
+}
+
+.nav-item:hover {
+    text-decoration: underline !important;
+}
