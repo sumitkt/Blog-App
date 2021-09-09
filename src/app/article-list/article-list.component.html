@@ -12,8 +12,8 @@
                     {{article.date.toDateString()}}
 
                 </div>
-                <p [innerHTML]='article.description'></p>
-                <a href="#" class="continue-reading">Continue Reading</a>
+                <p id="innerp" [innerHTML]='article.description'></p>
+                <a routerLink="/{{article.key}}" class="continue-reading">Continue Reading</a>
             </div>
 
         </div>

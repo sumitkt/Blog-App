@@ -10,8 +10,32 @@
 
 h3{
     font-size: 32px;
+    margin-left: 56px;
 }
 
 img{
     max-height: 200px;
+}
+.meta-info {
+    color: grey;
+    margin-top:-28px;
+    font-size: 14px;
+    margin-left: 56px;
+}
+#innerp {
+    margin-left: 56px;
+}
+.continue-reading{
+    font-style: italic;
+    color: gray;
+    margin-left: 56px;
+    text-decoration: none !important;
+}
+.continue-reading:visited, .continue-reading:active, .continue-reading:focus {
+    text-decoration: none !important;
+    color: #6c757d;
+}
+.continue-reading:hover{
+    text-decoration: underline !important;
+
 }
