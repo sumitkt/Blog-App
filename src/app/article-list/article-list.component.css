@@ -10,20 +10,18 @@
 
 h3{
     font-size: 32px;
-    margin-left: 56px;
+    /* margin-left: 56px; */
 }
 
 img{
     max-height: 200px;
 }
 
-#innerp {
-    margin-left: 56px;
-}
+
 .continue-reading{
     font-style: italic;
     color: gray;
-    margin-left: 56px;
+    /* margin-left: 56px; */
     text-decoration: none !important;
 }
 .continue-reading:visited, .continue-reading:active, .continue-reading:focus {
