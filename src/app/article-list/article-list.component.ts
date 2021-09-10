@@ -22,7 +22,4 @@ export class ArticleListComponent implements OnInit {
     .getArticles()
     .subscribe(articles => this.articles=articles);
   }
-
-  
-
 }
