@@ -19,13 +19,14 @@ export class ArticleListComponent implements OnInit {
   ngOnInit(): void {
     // this.articles=ARTICLES;
     // console.log(this.articles);
+    this.titleService.setTitle(`${this.sharedService.blogTitle}`);
     this.getArticles()
   }
   getArticles():void{
     this.articleService
     .getArticles()
     .subscribe(articles => {this.articles=articles;
-      this.titleService.setTitle(`${this.sharedService.blogTitle}`);
+    
     });
   }
 }
