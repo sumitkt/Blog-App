@@ -1,3 +1,4 @@
+<!-- <p>{{articles.length}}</p> -->
 <div *ngFor="let article of articles">
     <div class="card">
         <div class="card-body">
@@ -9,7 +10,7 @@
                     {{article.title}}
                 </h3>
                 <div class="meta-info">
-                    {{article.date.toDateString()}}
+                    {{article.date | date}}
 
                 </div>
                 <p id="innerp" [innerHTML]='article.description'></p>

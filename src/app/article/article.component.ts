@@ -27,6 +27,7 @@ export class ArticleComponent implements OnInit {
       this.articleSerice.getArticle(key).subscribe(article => {
         if(article==undefined){
           this.router.navigateByUrl('404');
+          //console.log("AAAAAAAAAAAA");
           return;
         }
         this.article=article;

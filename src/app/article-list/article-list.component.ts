@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { Article } from '../article';
 import { ArticleService } from '../article.service';
-import { ARTICLES } from '../mock-article';
+//import { ARTICLES } from '../mock-article';
 import { SharedService } from '../shared-service';
 
 @Component({
@@ -20,13 +20,17 @@ export class ArticleListComponent implements OnInit {
     // this.articles=ARTICLES;
     // console.log(this.articles);
     this.titleService.setTitle(`${this.sharedService.blogTitle}`);
-    this.getArticles()
+    this.getArticles(); 
+
+    
   }
   getArticles():void{
     this.articleService
     .getArticles()
     .subscribe(articles => {this.articles=articles;
-    
     });
+    
   }
+
+  
 }
